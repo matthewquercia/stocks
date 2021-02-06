@@ -2,7 +2,7 @@ import React from 'react'
 import Chart from "chart.js";
 let myLineChart;
 
-class LineGraph extends React.Component {
+class QuarterlyEarnings extends React.Component {
     chartRef = React.createRef();
     
     componentDidMount() {
@@ -50,4 +50,4 @@ class LineGraph extends React.Component {
     }
 }
 
-export default LineGraph;
+export default QuarterlyEarnings;

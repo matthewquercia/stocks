@@ -1,5 +1,5 @@
 import React from 'react';
-import LineGraph from './LineGraph'
+import QuarterlyEarnings from './QuarterlyEarnings'
 
 import '../Styles/StockDetails.css'
 
@@ -14,7 +14,7 @@ class StockDetails extends React.Component {
                     <p>{this.props.stock.price.currency}</p>
                     <p>{this.props.stock.price.exchangeName}</p>
                     <div className="chart-size">
-                        <LineGraph
+                        <QuarterlyEarnings
                             data={this.props.stock.earnings.earningsChart.quarterly}
                         />
                     </div>

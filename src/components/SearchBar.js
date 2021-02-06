@@ -1,4 +1,5 @@
 import React from 'react';
+//import '../Styles/StockDetails.css';
 
 class SearchBar extends React.Component {
     constructor(props){
@@ -16,9 +17,9 @@ class SearchBar extends React.Component {
         return(
             <div>
                 <form onSubmit={this.onFormSubmit}>
-                    <div>
-                        <label>Enter a Stock Ticker </label>
-                        <input type="text" value={this.state.term} onChange={(e) => { this.setState({ term: e.target.value }) }} />
+                    <div className="align-elements-same-line">
+                        <p>Enter a Stock Ticker </p>
+                        <input className="searchbar" type="text" value={this.state.term} onChange={(e) => { this.setState({ term: e.target.value }) }} />
                     </div>
                 </form>
             </div>
